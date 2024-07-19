@@ -49,6 +49,10 @@
     justify-content: flex-start;
   }
 
+  .main .home-wrapper .home-cta button {
+    width: 100%;
+  }
+
   .main .home-wrapper .home-cta p {
     width: 100%;
   }
