@@ -1,0 +1,77 @@
+@media screen and (max-width: 992px) {
+  .header .navigation {
+    padding: 0 20px;
+  }
+  .header .navigation .navbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .main .home-wrapper,
+  .how-we-work .how-we-work-wrapper,
+  .benefits .benefits-wrapper,
+  .contact .contact-wrapper,
+  .footer .footer-wrapper {
+    padding: 80px 60px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .how-we-work .how-we-work-wrapper .cards-wrapper .card,
+  .benefits .benefits-wrapper .cards-wrapper .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main .home-wrapper,
+  .how-we-work .how-we-work-wrapper,
+  .benefits .benefits-wrapper,
+  .contact .contact-wrapper,
+  .footer .footer-wrapper {
+    padding: 40px 20px;
+  }
+
+  .how-we-work .how-we-work-wrapper .cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefits .benefits-wrapper .cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .main .home-wrapper .home-cta {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .main .home-wrapper .home-cta p {
+    width: 100%;
+  }
+
+  .footer .footer-wrapper .footer-content .email-and-button {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .footer .footer-wrapper .footer-content .email-and-button button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .how-we-work .how-we-work-wrapper .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits .benefits-wrapper .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
