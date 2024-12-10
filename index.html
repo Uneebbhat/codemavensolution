@@ -37,7 +37,7 @@
           </ul>
         </nav>
         <div class="nav-cta">
-          <a href="https://cal.com/codemavensolution/30min" target="_blank">
+          <a href="https://cal.com/codemaven-solutions/30min" target="_blank">
             <button class="button button-outline">Book a call</button>
           </a>
         </div>
@@ -54,7 +54,7 @@
           </h1>
         </div>
         <div class="home-cta">
-          <a href="https://cal.com/codemavensolution/30min" target="_blank">
+          <a href="https://cal.com/codemaven-solutions/30min" target="_blank">
             <button class="button button-basic">Book a call</button>
           </a>
           <p>
@@ -235,11 +235,59 @@
       </div>
     </section>
 
+    <!-- Cal floating-popup embed code begins -->
+    <script type="text/javascript">
+      (function (C, A, L) {
+        let p = function (a, ar) {
+          a.q.push(ar);
+        };
+        let d = C.document;
+        C.Cal =
+          C.Cal ||
+          function () {
+            let cal = C.Cal;
+            let ar = arguments;
+            if (!cal.loaded) {
+              cal.ns = {};
+              cal.q = cal.q || [];
+              d.head.appendChild(d.createElement("script")).src = A;
+              cal.loaded = true;
+            }
+            if (ar[0] === L) {
+              const api = function () {
+                p(api, arguments);
+              };
+              const namespace = ar[1];
+              api.q = api.q || [];
+              if (typeof namespace === "string") {
+                cal.ns[namespace] = cal.ns[namespace] || api;
+                p(cal.ns[namespace], ar);
+                p(cal, ["initNamespace", namespace]);
+              } else p(cal, ar);
+              return;
+            }
+            p(cal, ar);
+          };
+      })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "30min", { origin: "https://cal.com" });
+
+      Cal.ns["30min"]("floatingButton", {
+        calLink: "codemaven-solutions/30min",
+        config: { layout: "month_view" },
+      });
+      Cal.ns["30min"]("ui", {
+        hideEventTypeDetails: false,
+        layout: "month_view",
+      });
+    </script>
+    <!-- Cal floating-popup embed code ends -->
+    <!-- Cal inline embed code ends -->
+
     <section class="contact" id="contact">
       <div class="contact-wrapper">
         <h3>CONTACT US</h3>
         <h2>Ready to get started?</h2>
-        <a href="https://cal.com/codemavensolution/30min" target="_blank">
+        <a href="https://cal.com/codemaven-solutions/30min" target="_blank">
           <button class="button button-black">Book a free strategy call</button>
         </a>
       </div>
@@ -250,10 +298,10 @@
         <h2>We help you scale up and achieve greater revenue growth</h2>
         <div class="footer-content">
           <div class="email-and-button">
-            <a href="mailto:codemavensolution@gmail.com"
-              >codemavensolution@gmail.com</a
+            <a href="mailto:codemavensolutions@gmail.com"
+              >codemavensolutions@gmail.com</a
             >
-            <a href="https://cal.com/codemavensolution/30min" target="_blank">
+            <a href="https://cal.com/codemaven-solutions/30min" target="_blank">
               <button class="button button-white">
                 Book a free strategy call
               </button>
@@ -261,7 +309,7 @@
           </div>
           <hr />
 
-          <a href="https://www.linkedin.com/company/codemaven-solution/"
+          <a href="https://www.linkedin.com/company/codemaven-solutions/"
             >linkedin</a
           >
         </div>
